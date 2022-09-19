@@ -10,4 +10,4 @@ Desktop Preview:
 
 Mobile Preview:
 
-![Screenshot_20220919-135155](https://user-images.githubusercontent.com/85684143/190978271-dc090767-96e3-48f9-97e6-51f681ee234d.jpg)
+![Screenshot (18)](https://user-images.githubusercontent.com/85684143/190979177-44076c0b-17da-495e-a807-686ef299e954.png)
