@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    user-select: text;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);         /* Remove the blue highlight on tap/touch in mobile */
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    box-shadow: 0px 0.5px #a2a2a2;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+/* Left Navbar */
+.leftNav {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    color: white;
+}
+
+.logo {
+    width: 2.5rem;
+    margin: 5px 20px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 75px;
+}
+
+/* Middle Navbar */
+.midNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 2px 10px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Right Navbar */
+.rightNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+}
+
+#search {
+    padding: 5px 10px;
+    margin-right: 15px;
+    outline: none;
+    border-radius: 15px;
+}
+
+.hamburger{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    width: 20%;
+    padding-right: 10px;
+    padding-top: 10px;
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+}
+
+/* HOME-SECTION */
+.home-section {
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 70%;
+    color: white;
+}
+
+.home p {
+    margin: 20px 0px;
+}
+
+
+/* ABOUT-SECTION */
+.about-section {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.about-section h1 {
+    margin-top: 70px;
+}
+
+
+/* FACILITIES-SECTION */
+.facilities-section {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facilities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.facilities-section h1 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.facilities div {
+    margin: 0px 20px;
+    text-align: center;
+    width: 20%;
+}
+
+.facilities img {
+    width: 6rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.facilities img:hover {
+    transform: rotate(180deg);
+}
+
+
+/* GALLERY-SECTION */
+.gallery-section {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.gallery-section h1 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Set the size of images */
+.mySlides img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 5px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
+
+/* Next & previous buttons */
+.slideButtons{
+    margin: 10px 0px;
+}
+
+.fa-chevron-circle-left, .fa-chevron-circle-right{
+    font-size: 25px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+
+/* IMPORTANCE OF EDUCATION-SECTION */
+.education-section {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.education-section h1 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.education p,
+li {
+    margin: 20px 0px;
+}
+
+
+/* CONTACT-SECTION */
+.contact-section {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    height: 100%;
+    width: 70%;
+}
+
+.contact-section h1 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+.address {
+    float: left;
+    width: 32%;
+    margin: 25px 10px;
+}
+
+.email {
+    float: left;
+    clear: left;
+    width: 32%;
+    margin: 10px 10px;
+}
+
+.founders {
+    float: left;
+    clear: left;
+    width: 32%;
+    margin: 10px 10px;
+}
+
+.contact h3 {
+    display: inline-block;
+    margin: 4px;
+}
+
+.fa-map-marker,
+.fa-envelope,
+.fa-users {
+    font-size: 18px;
+}
+
+/* Location Map */
+.mapouter {
+    float: right;
+    height: 400px;
+    width: 400px;
+    margin: 25px 10px;
+}
+
+#gmap_canvas{
+    height: 400px;
+    width: 400px;
+}
+
+/* FOOTER */
+.footer {
+    color: white;
+    font-size: 15px;
+    padding: 10px 0px;
+}
+
+
+
+/* UTILITY CLASSES */
+.primary-background {
+    background: rgba(0, 0, 0, 0.7) url('img/bg.jpg') no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.secondary-background {
+    background: rgba(208, 208, 208, 0.13);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.btn {
+    border: 2px solid gray;
+    border-radius: 25px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: gray;
+    color: black;
+}
+
+.btn-sm {
+    margin-right: 15px;
+    padding: 5px 12px;
+    font-size: 15px;
+}
+
+.btn-lg {
+    margin: 20px;
+    padding: 10px 18px;
+    font-size: 18px;
+}
+
+.text-heavy {
+    font-size: 3rem;
+}
+
+.text-large {
+    font-size: 2rem;
+}
+
+.text-medium {
+    font-size: 1.4rem;
+}
+
+.text-small {
+    font-size: 1.25rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.highlight {
+    color: yellow;
+}

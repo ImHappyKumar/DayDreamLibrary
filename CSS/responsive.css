@@ -1,0 +1,241 @@
+@media only screen and (max-width: 1250px) {
+    .rightNav {
+        display: none;
+    }
+
+    .gallery-section {
+        height: 600px;
+    }
+
+    .text-heavy {
+        font-size: 44px;
+    }
+    
+    .text-large {
+        font-size: 29px;
+    }
+    
+    .text-medium {
+        font-size: 20px;
+    }
+    
+    .text-small {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 1065px) {
+    /* For Hamburger Menu */
+    .hamburger {
+        display: flex;
+    }
+
+    .midNav {
+        flex-direction: column;
+    }
+
+    .leftNav {
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 1.5rem;
+    }
+
+    .navbar{
+        /* Default height of navbar (For Transition) */
+        height: 400px;
+        transition: height 0.5s ease-out;
+    }
+
+    .h-nav-resp {
+        /* Overwriting default height of navbar (This class will toggle using JS) */
+        height: 50px;
+    }
+
+    .v-class-resp {
+        visibility: hidden;
+    }
+
+    .primary-background {
+        background-position: center bottom;
+    }
+    
+    .facilities img {
+        width: 5rem;
+    }
+
+    .mapouter {
+        height: 300px;
+        width: 300px;
+    }
+
+    #gmap_canvas {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 1020px) {
+    .gallery-section {
+        height: 500px;
+    }
+
+    .education-section {
+        height: 1100px;
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+    .text-heavy {
+        font-size: 36px;
+    }
+    
+    .text-large {
+        font-size: 24px;
+    }
+    
+    .text-medium {
+        font-size: 17px;
+    }
+    
+    .text-small {
+        font-size: 15px;
+    }
+
+    .education-section {
+        height: 1000px;
+    }
+
+    .contact-section {
+        height: 700px;
+    }
+}
+
+
+@media only screen and (max-width: 790px) {
+    .mapouter {
+        height: 250px;
+        width: 250px;
+    }
+
+    #gmap_canvas {
+        height: 250px;
+        width: 250px;
+    }
+
+    .facilities img {
+        width: 4rem;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .text-heavy {
+        font-size: 30px;
+    }
+
+    .contact-section {
+        height: 900px;
+    }
+
+    .mapouter,
+    .address,
+    .email,
+    .founders {
+        float: none;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .address,
+    .email,
+    .founders {
+        width: 250px;
+    }
+
+    .address {
+        margin-top: 50px;
+    }
+
+    .education-section {
+        height: 1100px;
+    }
+
+    .gallery-section {
+        height: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 630px) {
+    .home,
+    .about,
+    .facilities,
+    .gallery,
+    .education,
+    .contact {
+        width: 90%;
+    }
+
+    .education-section {
+        height: 1000px;
+    }
+
+    .gallery-section {
+        height: 550px;
+    }
+
+    .mySlides img{
+        width: 100%;
+        }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .education-section {
+        height: 1100px;
+    }
+
+    .gallery-section {
+        height: 450px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .education-section {
+        height: 1250px;
+    }
+
+    .facilities-section {
+        height: 700px;
+    }
+
+    .text-heavy {
+        font-size: 25px;
+    }
+
+    .gallery-section {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .education-section {
+        height: 1350px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .education-section {
+        height: 1400px;
+    }
+
+    .text-heavy {
+        font-size: 22px;
+    }
+}
