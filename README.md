@@ -4,7 +4,7 @@ https://daydreamlibrary.tk/
 If above link not work:
 https://daydreamlibrary.000webhostapp.com/
 
-This is a front-end work of a library site.
+This is a front-end work of a library website which shows all informations about Day Dream Library.
 
 Desktop Preview:
 
