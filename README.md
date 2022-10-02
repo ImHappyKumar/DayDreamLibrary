@@ -1,7 +1,4 @@
 # DayDreamLibrary
-https://daydreamlibrary.tk/
-
-If above link not work:
 https://ImHappyKumar.github.io/DayDreamLibrary/
 
 This is a front-end work of a library website which shows all informations about Day Dream Library.
