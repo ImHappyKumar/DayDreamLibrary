@@ -1,33 +1,26 @@
-// hamburger = document.querySelector(".hamburger");
 openHamburger = document.querySelector('.fa-bars');
 closeHamburger = document.querySelector('.fa-xmark');
-navbar = document.querySelector(".navbar");
-midNav = document.querySelector(".midNav");
-leftNav = document.querySelector(".leftNav");
+popup = document.querySelector('.popup-mobile-menu');
+navList = document.querySelectorAll('.mobile-nav li a')
 
-closeHamburger.classList.toggle('fa-xmark');               // Currently, class="fa-xmark" removed.
+closeHamburger.classList.toggle('fa-xmark');               // Currently, class="fa-xmark" removed. (By Default)
 
 // When hamburger menu open
 openHamburger.addEventListener('click', ()=> {
-    openHamburger.classList.toggle('fa-bars');             // Currently, class="fa-bars" removed.
-    closeHamburger.classList.toggle('fa-xmark');           // Currently, class="fa-xmark" added.
-    navbar.classList.toggle('h-nav-resp');
-    midNav.classList.toggle('v-class-resp');
-    leftNav.classList.toggle('v-class-resp');
+    openHamburger.classList.remove('fa-bars');
+    closeHamburger.classList.add('fa-xmark');
+    popup.classList.add('open');
 });
 
 // When hamburger menu close
 closeHamburger.addEventListener('click', ()=> {
-    openHamburger.classList.toggle('fa-bars');             // Currently, class="fa-bars" removed.
-    closeHamburger.classList.toggle('fa-xmark');           // Currently, class="fa-xmark" added.
-    navbar.classList.toggle('h-nav-resp');
-    midNav.classList.toggle('v-class-resp');
-    leftNav.classList.toggle('v-class-resp');
+    openHamburger.classList.add('fa-bars');
+    closeHamburger.classList.remove('fa-xmark');
+    popup.classList.remove('open');
 });
 
 
-// Hamburger Menu Auto-Close after clicking on midNav <li> options i.e, navList
-navList = document.querySelectorAll(".navList");    // Return all matches (not only the first)
+// Hamburger Menu Auto-Close after clicking on ".mobile-nav li a"
 for(let i=0; i<navList.length; i++){
     navList[i].addEventListener('click', ()=> {
         closeHamburger.click();

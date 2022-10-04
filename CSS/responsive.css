@@ -10,15 +10,15 @@
     .text-heavy {
         font-size: 44px;
     }
-    
+
     .text-large {
         font-size: 29px;
     }
-    
+
     .text-medium {
         font-size: 20px;
     }
-    
+
     .text-small {
         font-size: 18px;
     }
@@ -31,37 +31,26 @@
         display: flex;
     }
 
-    .midNav {
-        flex-direction: column;
-    }
-
-    .leftNav {
-        align-items: flex-start;
-    }
-
     .logo {
         width: 1.5rem;
     }
 
-    .navbar{
-        /* Default height of navbar (For Transition) */
-        height: 400px;
-        transition: height 0.5s ease-out;
+    .midNav {
+        display: none;
     }
 
-    .h-nav-resp {
-        /* Overwriting default height of navbar (This class will toggle using JS) */
-        height: 50px;
+    .navbar {
+        justify-content: space-between;
     }
 
-    .v-class-resp {
-        visibility: hidden;
+    .open {
+        transform: translateY(0);           /* popup menu show/open from the top */
     }
 
     .primary-background {
         background-position: center bottom;
     }
-    
+
     .facilities img {
         width: 5rem;
     }
@@ -93,15 +82,15 @@
     .text-heavy {
         font-size: 36px;
     }
-    
+
     .text-large {
         font-size: 24px;
     }
-    
+
     .text-medium {
         font-size: 17px;
     }
-    
+
     .text-small {
         font-size: 15px;
     }
@@ -172,6 +161,7 @@
 
 
 @media only screen and (max-width: 630px) {
+
     .home,
     .about,
     .facilities,
@@ -189,9 +179,9 @@
         height: 550px;
     }
 
-    .mySlides img{
+    .mySlides img {
         width: 100%;
-        }
+    }
 }
 
 
