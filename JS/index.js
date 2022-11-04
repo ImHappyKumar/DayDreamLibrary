@@ -2,7 +2,7 @@
 join = document.querySelector('.btn-lg');
 
 join.addEventListener('click', ()=> {
-  window.location = "https://wa.me/919758335415?text=Hye!%20Dushyant%0AI%20would%20like%20to%20join%20Day%20Dream%20Library";  
+  window.location = "https://wa.me/919758335415?text=Hey!%20Dushyant%0AI%20would%20like%20to%20join%20Day%20Dream%20Library";  
 })
 
 
